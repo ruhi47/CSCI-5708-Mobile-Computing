@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditUserProfile">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_medium"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@android:color/white">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBarUserProfileDetail"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/menu_userinfo"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            app:title="User Profile Details" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="?actionBarSize"
+            android:layout_marginBottom="?actionBarSize"
+            android:layout_centerInParent="true">
+
+            <EditText
+                android:id="@+id/fname_inputField"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:hint="First name"
+                android:ems="10"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/lname_inputField"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="Gender Identification"
+                android:layout_gravity="center"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp">
+
+                <CheckBox
+                    android:id="@+id/male_checkbox"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="Male" />
+
+                <CheckBox
+                    android:id="@+id/female_checkbox"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Female" />
+
+                <CheckBox
+                    android:id="@+id/other_checkbox"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Other" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <EditText
+                android:id="@+id/age_inputField"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:hint="Age"
+                android:ems="10"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"/>
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/cancel_button"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Cancel"
+                android:textColor="@color/blue_medium" />
+        </LinearLayout>
+</RelativeLayout>

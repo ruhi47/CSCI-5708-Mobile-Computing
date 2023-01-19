@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoreActivity">
+
+    <TextView
+        android:id="@+id/txtMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Taking medicines was never as easy as with Pill O' Clock.
+            Created in Dalhousie University."
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="150dp"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:id="@+id/imgDal"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/dal"
+        android:clickable="true"
+        android:layout_below="@id/txtMore"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="100dp"/>
+
+    <TextView
+        android:id="@+id/txtFun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fun tip: Click the logo!"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/imgDal"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:layout_marginStart="120dp"/>
+
+    <TextView
+        android:id="@+id/txtGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Created by Group6, W22"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/txtFun"
+        android:textColor="@color/black"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:layout_marginStart="120dp"/>
+
+</RelativeLayout>

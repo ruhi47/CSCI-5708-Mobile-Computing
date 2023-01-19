@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/userinfo"
+        android:icon="@drawable/ic_user_info_help"
+        android:title="user info pop up"
+        app:showAsAction="always"/>
+
+</menu>
